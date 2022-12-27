@@ -51,3 +51,7 @@ $ npm run dev
 ## Credits
 
 Project is based on the given example named [Simple RPG](https://git.pg.edu.pl/internet-services-architectures/simple-rpg), as it was required for the laboratory classes on the university.
+
+## License
+
+Project is licensed under the [MIT](../blob/master/LICENSE) license.
