@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Music Library web application"/>
+        <meta name="keywords" content="songs"/>
+        <meta name="author" content="Bartosz Jankowski"/>
+        <title>Music Library</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="song_add.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section class="up-section">
+                <header class="header">
+                    <h1>Music Library</h1>
+                </header>
+    
+                <nav class="navigation-bar">
+                    <ul>
+                        <li><a href="../index.html">Main</a></li>
+                        <li><a href="../artist_list/artist_list.html">Artists</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2>Add new song</h2></header>
+                    <form class="artist_form" id="infoForm">
+                        <label for="name">Name:</label>
+                        <input class="ui-control ui-input" id="name" name="name"/>
+                        <label for="producer">Producer:</label>
+                        <input class="ui-control ui-input" id="producer" name="producer"/>
+                        <label for="length">Length:</label>
+                        <input class="ui-control ui-input" id="length" name="length"/>
+                        <label for="releasedate">Release date:</label>
+                        <input class="ui-control ui-input" type="date" id="releasedate" name="releasedate"/>
+                        <label for="url">Url:</label>
+                        <input class="ui-control ui-input" id="url" name="url"/>
+                        <input class="ui-control ui-button" id="submit" type="submit" name="Add" value="Add"/>
+                    </form>
+                </article>
+            </section>
+
+            <footer class="footer">
+                <p>Copyright &copy; 2020, Bartosz Jankowski</p>
+            </footer>
+        </div>
+    </body>
+</html>

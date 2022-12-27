@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Music Library web application"/>
+        <meta name="keywords" content="songs"/>
+        <meta name="author" content="Bartosz Jankowski"/>
+        <title>Music Library</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="stylesheet" href="artist_view.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="artist_view.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section class="up-section">
+                <header class="header">
+                    <h1>Music Library</h1>
+                </header>
+    
+                <nav class="navigation-bar">
+                    <ul>
+                        <li><a href="../index.html">Main</a></li>
+                        <li><a href="../artist_list/artist_list.html">Artists</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2 id="name">name</h2></header>
+                    <section>
+                        <h3>Details</h3>
+                        <div class="details-grid">
+                            <label for="genre">Genre:</label><span id="genre">genre</span>
+                            <label for="nationality">Nationality:</label><span id="nationality">Nationality</span>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Songs</h3>
+                        <table class="data-table">
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                        <button class="ui-button ui-control" id="list">Overview</button>
+                                    </td>                                    
+                                    <td>
+                                        <button class="ui-button ui-control" id="list">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button class="ui-button ui-control" id="list">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section id='add-button'></section>
+                </article>
+            </section>
+
+            <footer class="footer">
+                <p>Copyright &copy; 2020, Bartosz Jankowski</p>
+            </footer>
+        </div>
+    </body>
+</html>

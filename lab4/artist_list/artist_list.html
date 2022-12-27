@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Music Library web application"/>
+        <meta name="keywords" content="songs"/>
+        <meta name="author" content="Bartosz Jankowski"/>
+        <title>Music Library</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="artist_list.js" defer="defer"></script>
+    <body>
+        <div class="container">
+            <section class="up-section">
+                <header class="header">
+                    <h1>Music Library</h1>
+                </header>
+    
+                <nav class="navigation-bar">
+                    <ul>
+                        <li><a href="../index.html">Main</a></li>
+                        <li><a href="artist_list.html">Artists</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2>Artists</h2></header>
+                    <table class="data-table">
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>name</td>
+                                <td>
+                                    <button class="ui-button ui-control" id="list">View</button>
+                                </td>
+                                <td>
+                                    <button class="ui-button ui-control" id="list">Edit</button>
+                                </td>
+                                <td>
+                                    <button class="ui-button ui-control" id="list">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <section>
+                        <form action="../artist_add/artist_add.html">
+                            <input class="ui-button ui-control" id="submit" type="submit" value="Add Artist"/>
+                        </form>    
+                    </section>            
+                </article>
+            </section>
+
+            <footer class="footer">
+                <p>Copyright &copy; 2020, Bartosz Jankowski</p>
+            </footer>
+        </div>
+    </body>
+</html>
