@@ -54,4 +54,4 @@ Project is based on the given example named [Simple RPG](https://git.pg.edu.pl/i
 
 ## License
 
-Project is licensed under the [MIT](../blob/master/LICENSE) license.
+Project is licensed under the [MIT](../master/LICENSE) license.
